@@ -23,7 +23,6 @@ import 'package:alhazm/screens/app/privacy/privacy.dart';
 import 'package:alhazm/screens/app/profile/profile.dart';
 import 'package:alhazm/screens/auth/sign-in/enter-otp.dart';
 import 'package:alhazm/screens/auth/sign-in/sign-in.dart';
-import 'package:alhazm/screens/auth/sign-up/sign-up.dart';
 import 'package:alhazm/screens/auth/splash/splash.dart';
 
 import 'package:flutter/material.dart';
@@ -56,7 +55,6 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      locale: Locale('ar'),
       theme: ThemeData(
         primaryColor: Color(0xFF007481),
         accentColor: Color(0xFF65410D),
@@ -73,7 +71,6 @@ class _MyAppState extends State<MyApp> {
         "/app": (context) => AppWidget(),
         "/auth": (context) => AuthWidget(myLogin: myLogin),
         "/enterotp": (context) => EnterOTP(myLogin: myLogin),
-        "/signup": (context) => SignUp(),
         "/home": (context) => HomeScreen(),
         "/categories": (context) => Categories(),
         "/categorydetails": (context) => CategoryDetails(),
